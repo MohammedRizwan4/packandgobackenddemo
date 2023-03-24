@@ -40,7 +40,7 @@ app.use('/api', packageRoutes)
 app.use('/api', bookingRoutes)
 app.use('/api', paymentRoutes)
 
-app.listen(process.env.PORT, () => {
+app.listen(process.env.PORT || 7900, () => {
     console.log(`Server is started at ${process.env.PORT}`);
 })
 
